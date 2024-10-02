@@ -6,6 +6,7 @@
 | ------ | ----------- |
 | การพัฒนา UI เบื้องต้น                 | - การสร้างโปรเจค |
 |                                   | - ทำความรู้จักกับ Widget ใน Flutter (Stateless และ Stateful Widgets) |
+|                                   | - การใช้ Scaffold Widget|
 |                                   | - การใช้ Layout Widgets: Container, Column, Row |
 |                                   | - การใช้งานปุ่ม (Button Widgets): TextButton, ElevatedButton, OutlinedButton, IconButton|
 |การใช้ ListView และ GridView        | - การสร้างรายการข้อมูลแบบเลื่อนด้วย ListView|
