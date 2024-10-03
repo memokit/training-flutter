@@ -22,7 +22,11 @@
 |การจัดการ State ด้วย GetX            | - ทำความเข้าใจกับ Reactive State, Simple State และ StateMixin|
 |                                   | - การสร้าง Controller ใน GetX เพื่อจัดการ State|
 |                                   | - จัดการ Dependencies Get.put(), Get.lazyPut() และ Get.find()|
+<<<<<<< HEAD
 |                                   | - การใช้ Obx, GetBuilder, GetX และ StateMixin สำหรับการแสดงผล UI ที่เชื่อมโยงกับ State|
+=======
+|                                   | - การใช้ Obx, GetBuilder และ GetX สำหรับการแสดงผล UI ที่เชื่อมโยงกับ State|
+>>>>>>> 84229f4 (update training 4 Navigation)
 |การติดตั้งและตั้งค่า Dio                 | - การติดตั้ง Dio ผ่าน pubspec.yaml|
 |                                   | - การตั้งค่าเบื้องต้นสำหรับ Dio instance เช่นการกำหนด Base URL และ Timeout|
 |การทำงานกับ HTTP Requests           | - การทำ GET, POST, PUT, DELETE Requests ด้วย Dio|
