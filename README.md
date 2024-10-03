@@ -15,14 +15,14 @@
 |การทำงานกับรูปภาพและไอคอน            | - การเพิ่มรูปภาพใน UI โดยใช้ Image Widget|
 |                                   | - การแสดงไอคอนในแอปด้วย Icon และ ImageIcon|
 |การติดตั้งและตั้งค่า GetX ในโปรเจกต์      | - การเพิ่ม GetX ใน pubspec.yaml|
-|                                   | - การตั้งค่าและการเริ่มต้นใช้งาน GetX|
+|                                   | - การเริ่มต้นใช้งาน GetX|
+|การจัดการ Navigation ด้วย GetX       | - การเปลี่ยนหน้าจอด้วย Get.to(), Get.off(), Get.offAll(), และ Get.back()|
+|                                   | - การใช้งาน Named Routes|
+|                                   | - การส่งข้อมูลระหว่างหน้า (Passing Data between Routes)|
 |การจัดการ State ด้วย GetX            | - ทำความเข้าใจกับ Reactive State, Simple State และ StateMixin|
 |                                   | - การสร้าง Controller ใน GetX เพื่อจัดการ State|
 |                                   | - จัดการ Dependencies Get.put(), Get.lazyPut() และ Get.find()|
 |                                   | - การใช้ Obx, GetBuilder และ GetX สำหรับการแสดงผล UI ที่เชื่อมโยงกับ State|
-|การจัดการ Navigation                | - การเปลี่ยนหน้าจอด้วย Get.to(), Get.off(), และ Get.back()|
-|                                   | - การส่งข้อมูลระหว่างหน้า (Passing Data between Routes)|
-|                                   | - การใช้งาน Named Routes|
 |การติดตั้งและตั้งค่า Dio                 | - การติดตั้ง Dio ผ่าน pubspec.yaml|
 |                                   | - การตั้งค่าเบื้องต้นสำหรับ Dio instance เช่นการกำหนด Base URL และ Timeout|
 |การทำงานกับ HTTP Requests           | - การทำ GET, POST, PUT, DELETE Requests ด้วย Dio|
