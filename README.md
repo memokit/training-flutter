@@ -9,9 +9,9 @@
 |                                   | - การใช้ Scaffold Widget|
 |                                   | - การใช้ Layout Widgets: Container, Column, Row |
 |                                   | - การใช้งานปุ่ม (Button Widgets): TextButton, ElevatedButton, OutlinedButton, IconButton|
-|การใช้ ListView และ GridView        | - การสร้างรายการข้อมูลแบบเลื่อนด้วย ListView|
-|                                   | - การจัดการการแสดงข้อมูลหลายคอลัมน์ด้วย GridView|
+|การใช้ ListView และ GridView        | - การสร้างรายการข้อมูลแบบ Scroll ด้วย ListView|
 |                                   | - การสร้าง List แบบกำหนดเอง (Custom ListView)|
+|                                   | - การจัดการการแสดงข้อมูลหลายคอลัมน์ด้วย GridView|
 |การทำงานกับรูปภาพและไอคอน            | - การเพิ่มรูปภาพใน UI โดยใช้ Image Widget|
 |                                   | - การแสดงไอคอนในแอปด้วย Icon และ ImageIcon|
 |                                   | - การใช้ NetworkImage เพื่อโหลดภาพจากอินเทอร์เน็ต|
