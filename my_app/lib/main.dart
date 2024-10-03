@@ -11,6 +11,11 @@ import 'package:my_app/training-4/argument_second_page.dart';
 import 'package:my_app/training-4/navigator_page.dart';
 import 'package:my_app/training-4/route_name_2_page.dart';
 import 'package:my_app/training-4/route_name_page.dart';
+import 'package:my_app/training-5/get_builder_state_page.dart';
+import 'package:my_app/training-5/getx_state_page.dart';
+import 'package:my_app/training-5/obx_state_page.dart';
+import 'package:my_app/training-5/state_main_page.dart';
+import 'package:my_app/training-5/state_mixin_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,10 +43,12 @@ class MyApp extends StatelessWidget {
 
       initialRoute: '/',
       getPages: [
-        // GetPage(name: '/', page: () => RouteNamePage()),
-        GetPage(name: '/', page: () => ArgumentFirstPage()),
-        GetPage(name: '/routeName2Page', page: () => RouteName2Page()),
-        GetPage(name: '/argumentSecondPage', page: () => ArgumentSecondPage()),
+        GetPage(name: '/', page: () => StateMainPage()),
+        GetPage(name: '/obxStatePage', page: () => ObxStatePage()),
+        GetPage(
+            name: '/getBuilderStatePage', page: () => GetBuilderStatePage()),
+        GetPage(name: '/getxStatePage', page: () => GetxStatePage()),
+        GetPage(name: '/stateMixinPage', page: () => StateMixinPage()),
       ],
     );
   }
