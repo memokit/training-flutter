@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/training-1/button_widgets_page.dart';
-import 'package:my_app/training-1/layout_widgets_page.dart';
-import 'package:my_app/training-1/scaffold_widget_page.dart';
-import 'package:my_app/training-1/stateful_page.dart';
-import 'package:my_app/training-1/stateless_page.dart';
+import 'package:my_app/training-2/grid_view_builder_page.dart';
+import 'package:my_app/training-2/grid_view_count_page.dart';
+import 'package:my_app/training-2/list_view_custom_page.dart';
+import 'package:my_app/training-2/list_view_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,12 +20,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      // home: const StatelessPage(),
-      // home: const StatefulPage(),
+      // home: ListViewPage(),
+      // home: const GridViewCountPage(),
+      home: ListViewCustomPage(),
+      // home: const GridViewBuilderPage(),
       // home: const LayoutWidgetsPage(),
       // home: const ScaffoldWidgetPage(),
-      home: const ButtonWidgetsPage(),
+      // home: const ButtonWidgetsPage(),
     );
   }
 }
