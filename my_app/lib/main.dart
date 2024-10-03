@@ -3,6 +3,8 @@ import 'package:my_app/training-2/grid_view_builder_page.dart';
 import 'package:my_app/training-2/grid_view_count_page.dart';
 import 'package:my_app/training-2/list_view_custom_page.dart';
 import 'package:my_app/training-2/list_view_page.dart';
+import 'package:my_app/training-3/icon_page.dart';
+import 'package:my_app/training-3/image_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,10 +24,10 @@ class MyApp extends StatelessWidget {
       ),
       // home: ListViewPage(),
       // home: const GridViewCountPage(),
-      home: ListViewCustomPage(),
+      // home: ListViewCustomPage(),
       // home: const GridViewBuilderPage(),
-      // home: const LayoutWidgetsPage(),
-      // home: const ScaffoldWidgetPage(),
+      // home: const ImagePage(),
+      home: const IconPage(),
       // home: const ButtonWidgetsPage(),
     );
   }
