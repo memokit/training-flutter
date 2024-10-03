@@ -1,0 +1,1 @@
+ /Users/kitti/Works/training/training-flutter/my_clean_app/.dart_tool/flutter_build/f6fc7d6820c5fea20970f1e4ea7436a1/native_assets.yaml: 
