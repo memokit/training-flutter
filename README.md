@@ -29,9 +29,8 @@
 >>>>>>> 84229f4 (update training 4 Navigation)
 |การติดตั้งและตั้งค่า Dio                 | - การติดตั้ง Dio ผ่าน pubspec.yaml|
 |                                   | - การตั้งค่าเบื้องต้นสำหรับ Dio instance เช่นการกำหนด Base URL และ Timeout|
-|การทำงานกับ HTTP Requests           | - การทำ GET, POST, PUT, DELETE Requests ด้วย Dio|
-|                                   | - การส่ง Query Parameters และ Headers|
-|                                   | - การส่งข้อมูลผ่าน Request Body|
+|การทำงานกับ HTTP Requests           | - การทำงานด้วย GET, POST, PUT, DELETE Requests ด้วย Dio|
+|                                   | - การส่ง Query Parameters, Body Data และ Headers ใน Dio|
 |การจัดการ Response                  | - การจัดการ Response และการอ่านข้อมูลที่ได้รับ|
 |                                   | - การนำข้อมูลมาแสดงผล|
 |แนะนำ Clean Architecture           | - Clean Architecture คืออะไร และแนวคิดสำคัญของการออกแบบ Clean Architecture|
