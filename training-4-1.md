@@ -16,7 +16,7 @@ dependencies:
 4. หลังจากเพิ่มใน pubspec.yaml แล้ว ให้รันคำสั่งนี้ใน terminal เพื่ออัปเดต dependencies:
 
 ```
-หลังจากเพิ่มใน pubspec.yaml แล้ว ให้รันคำสั่งนี้ใน terminal เพื่ออัปเดต dependencies:
+flutter pub get
 ```
 
 หากคุณต้องการดูรายละเอียดเพิ่มเติมเกี่ยวกับ GetX หรือแพ็กเกจอื่น ๆ บน pub.dev
