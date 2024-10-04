@@ -1,16 +1,16 @@
-# การเพิ่ม GetX ใน pubspec.yaml
+# การติดตั้ง Dio ผ่าน pubspec.yaml
 
-#### ในการเพิ่ม GetX ในโปรเจกต์ Flutter ของคุณ คุณสามารถทำตามขั้นตอนต่อไปนี้:
+#### ในการติดตั้ง ```Dio``` บน Flutter ผ่านไฟล์ ```pubspec.yaml``` คุณสามารถทำได้ตามขั้นตอนดังนี้:
 
 1. เปิดไฟล์ ```pubspec.yaml``` ของโปรเจกต์ Flutter ของคุณ
 2. ไปที่ส่วน ```dependencies```
-3. เพิ่ม GetX โดยใส่ dependency ดังนี้:
+3. เพิ่ม Dio โดยใส่ dependency ดังนี้:
 
 ```
 dependencies:
   flutter:
     sdk: flutter
-  get: ^4.6.6 # ใส่เวอร์ชันที่ต้องการ หรือใช้เวอร์ชันล่าสุด
+  dio: ^5.7.0
 ```
 
 4. หลังจากเพิ่มใน pubspec.yaml แล้ว ให้รันคำสั่งนี้ใน terminal เพื่ออัปเดต dependencies:
