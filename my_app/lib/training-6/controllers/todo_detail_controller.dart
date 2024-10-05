@@ -1,19 +1,14 @@
-import 'package:dio/src/response.dart' as resp;
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_app/training-6/controllers/todo_controller.dart';
-import 'package:my_app/training-6/dio/dio_client.dart';
 import 'package:my_app/training-6/models/todo_model.dart';
+import 'package:my_app/training-6/services/todo_service.dart';
 
 class TodoDetailController extends GetxController {
-  final DioClient dioClient;
-
   TextEditingController nameCtr = TextEditingController(text: "");
 
   Rxn<TodoModel> todo = Rxn<TodoModel>();
   String id = "0";
-
-  TodoDetailController(this.dioClient);
 
   @override
   onInit() {
@@ -29,22 +24,17 @@ class TodoDetailController extends GetxController {
 
   getDetail() async {
     try {
-      resp.Response response = await dioClient.dio.get('/page/$id');
-      TodoModel data = TodoModel.fromJson(response.data);
+      TodoModel data = await TodoService().getData(id);
 
       nameCtr.text = data.name ?? "";
     } catch (e) {}
   }
 
-  Future<void> save(String name) async {
+  updateData(String name) async {
     try {
-      Map<String, dynamic> body = {
-        "name": name,
-      };
+      bool result = await TodoService().update(id, name);
 
-      resp.Response response = await dioClient.dio.put('/page/$id', data: body);
-
-      if (response.statusCode == 200) {
+      if (result) {
         Get.snackbar("สำเร็จ", "บันทึกสำเร็จ");
         TodoController toCtr = Get.find();
         toCtr.fetchData();

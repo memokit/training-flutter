@@ -1,14 +1,10 @@
-import 'package:dio/src/response.dart' as resp;
 import 'package:get/get.dart';
-import 'package:my_app/training-6/dio/dio_client.dart';
 import 'package:my_app/training-6/models/todo_model.dart';
+import 'package:my_app/training-6/services/todo_service.dart';
 
 class TodoController extends GetxController with StateMixin<List<TodoModel>> {
   var posts = [].obs; // สร้าง observable ที่สามารถติดตามการเปลี่ยนแปลงได้
   var isLoading = false.obs; // สถานะการโหลดข้อมูล
-  final DioClient dioClient;
-
-  TodoController(this.dioClient);
 
   @override
   onInit() {
@@ -25,26 +21,17 @@ class TodoController extends GetxController with StateMixin<List<TodoModel>> {
     try {
       change([], status: RxStatus.loading());
 
-      resp.Response response = await dioClient.dio.get('/page');
+      List<TodoModel> data = await TodoService().fetchData();
 
-      response.data = List<TodoModel>.from(
-        response.data.map((x) => TodoModel.fromJson(x)),
-      );
-
-      change(response.data, status: RxStatus.success());
+      change(data, status: RxStatus.success());
     } catch (e) {}
   }
 
   Future<void> save(String name) async {
     try {
-      Map<String, dynamic> body = {
-        "name": name,
-        "avatar": "",
-      };
+      bool result = await TodoService().save(name);
 
-      resp.Response response = await dioClient.dio.post('/page', data: body);
-
-      if (response.statusCode == 201) {
+      if (result) {
         Get.snackbar("สำเร็จ", "บันทึกสำเร็จ");
         await fetchData();
       }
@@ -53,8 +40,9 @@ class TodoController extends GetxController with StateMixin<List<TodoModel>> {
 
   delete(String id) async {
     try {
-      resp.Response response = await dioClient.dio.delete('/page/$id');
-      if (response.statusCode == 200) {
+      bool result = await TodoService().delete(id);
+
+      if (result) {
         Get.snackbar("สำเร็จ", "ลบสำเร็จ");
         await fetchData();
       }

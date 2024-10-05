@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_app/training-5/get_builder_state_page.dart';
-import 'package:my_app/training-5/getx_state_page.dart';
 import 'package:my_app/training-6/dio_main_page.dart';
 import 'package:my_app/training-6/todo_create_page.dart';
 import 'package:my_app/training-6/todo_edit_page.dart';

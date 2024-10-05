@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_app/training-6/controllers/todo_controller.dart';
 
-class TodoPage extends StatelessWidget {
-  TodoPage({super.key});
+class GetReqPage extends StatelessWidget {
+  GetReqPage({super.key});
 
   final TodoController controller = Get.put(TodoController());
 
@@ -21,20 +21,6 @@ class TodoPage extends StatelessWidget {
             children: [
               Text("${state?[index].id} : "),
               Text(state?[index].name ?? ""),
-              IconButton(
-                onPressed: () {
-                  Get.toNamed("/todoEditPage", arguments: {
-                    "id": state?[index].id,
-                  });
-                },
-                icon: Icon(Icons.edit),
-              ),
-              IconButton(
-                onPressed: () {
-                  controller.delete(state?[index].id ?? "0");
-                },
-                icon: Icon(Icons.delete),
-              )
             ],
           )),
         ),
@@ -44,9 +30,9 @@ class TodoPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Get.toNamed("/todoCreatePage");
+          controller.fetchData(); // เรียก API เมื่อกดปุ่ม
         },
-        child: Icon(Icons.add),
+        child: Icon(Icons.refresh),
       ),
     );
   }
