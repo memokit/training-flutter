@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_app/training-6/controllers/todo_controller.dart';
-import 'package:my_app/training-6/dio/dio_client.dart';
 
 class TodoCreatePage extends StatefulWidget {
   TodoCreatePage({super.key});
@@ -11,7 +10,7 @@ class TodoCreatePage extends StatefulWidget {
 }
 
 class _TodoCreatePageState extends State<TodoCreatePage> {
-  final TodoController controller = Get.put(TodoController(DioClient()));
+  final TodoController controller = Get.put(TodoController());
   final _formKey = GlobalKey<FormState>();
   TextEditingController nameCtr = TextEditingController(text: "");
   @override

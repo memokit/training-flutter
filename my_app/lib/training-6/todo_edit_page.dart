@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_app/training-6/controllers/todo_detail_controller.dart';
-import 'package:my_app/training-6/dio/dio_client.dart';
 
 class TodoEditPage extends StatefulWidget {
   TodoEditPage({super.key});
@@ -11,8 +10,7 @@ class TodoEditPage extends StatefulWidget {
 }
 
 class _TodoEditPageState extends State<TodoEditPage> {
-  final TodoDetailController controller =
-      Get.put(TodoDetailController(DioClient()));
+  final TodoDetailController controller = Get.put(TodoDetailController());
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -43,7 +41,7 @@ class _TodoEditPageState extends State<TodoEditPage> {
               ElevatedButton(
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
-                    controller.save(controller.nameCtr.text);
+                    controller.updateData(controller.nameCtr.text);
                   }
                 },
                 child: Text('Submit'),
