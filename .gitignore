@@ -1,2 +1,4 @@
 my_app/android/
 my_app/android/.gradle
+my_clean_app/build/
+my_clean_app/.dart_tool/
