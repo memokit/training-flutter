@@ -1,16 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_app/training-2/grid_view_builder_page.dart';
-import 'package:my_app/training-2/grid_view_count_page.dart';
-import 'package:my_app/training-2/list_view_custom_page.dart';
-import 'package:my_app/training-2/list_view_page.dart';
-import 'package:my_app/training-3/icon_page.dart';
-import 'package:my_app/training-3/image_page.dart';
-import 'package:my_app/training-4/argument_first_page.dart';
-import 'package:my_app/training-4/argument_second_page.dart';
-import 'package:my_app/training-4/navigator_page.dart';
-import 'package:my_app/training-4/route_name_2_page.dart';
-import 'package:my_app/training-4/route_name_page.dart';
 import 'package:my_app/training-5/get_builder_state_page.dart';
 import 'package:my_app/training-5/getx_state_page.dart';
 import 'package:my_app/training-5/obx_state_page.dart';
@@ -33,14 +22,6 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // home: ListViewPage(),
-      // home: const GridViewCountPage(),
-      // home: ListViewCustomPage(),
-      // home: const GridViewBuilderPage(),
-      // home: const ImagePage(),
-      // home: const IconPage(),
-      // home: const NavigatorPage(),
-
       initialRoute: '/',
       getPages: [
         GetPage(name: '/', page: () => StateMainPage()),
