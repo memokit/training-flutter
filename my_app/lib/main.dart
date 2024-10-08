@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_app/training-2/grid_view_builder_page.dart';
-import 'package:my_app/training-2/grid_view_count_page.dart';
-import 'package:my_app/training-2/list_view_custom_page.dart';
-import 'package:my_app/training-2/list_view_page.dart';
-import 'package:my_app/training-3/icon_page.dart';
-import 'package:my_app/training-3/image_page.dart';
 import 'package:my_app/training-4/argument_first_page.dart';
 import 'package:my_app/training-4/argument_second_page.dart';
 import 'package:my_app/training-4/navigator_page.dart';
@@ -28,13 +22,16 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: '/',
-      getPages: [
-        // GetPage(name: '/', page: () => RouteNamePage()),
-        GetPage(name: '/', page: () => ArgumentFirstPage()),
-        GetPage(name: '/routeName2Page', page: () => RouteName2Page()),
-        GetPage(name: '/argumentSecondPage', page: () => ArgumentSecondPage()),
-      ],
+
+      home: const NavigatorPage(),
+
+      // initialRoute: '/',
+      // getPages: [
+      //   // GetPage(name: '/', page: () => RouteNamePage()),
+      //   GetPage(name: '/', page: () => ArgumentFirstPage()),
+      //   GetPage(name: '/routeName2Page', page: () => RouteName2Page()),
+      //   GetPage(name: '/argumentSecondPage', page: () => ArgumentSecondPage()),
+      // ],
     );
   }
 }
