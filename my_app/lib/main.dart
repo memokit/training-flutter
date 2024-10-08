@@ -28,14 +28,6 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // home: ListViewPage(),
-      // home: const GridViewCountPage(),
-      // home: ListViewCustomPage(),
-      // home: const GridViewBuilderPage(),
-      // home: const ImagePage(),
-      // home: const IconPage(),
-      // home: const NavigatorPage(),
-
       initialRoute: '/',
       getPages: [
         // GetPage(name: '/', page: () => RouteNamePage()),
